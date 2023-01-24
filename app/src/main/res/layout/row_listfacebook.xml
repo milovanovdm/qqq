@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listfacebookRowModel" type="com.egoistenoksapplication.app.modules.home.data.model.ListfacebookRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowfacebook"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_2">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_indigo_500_radius_15"
+            android:id="@+id/btnFacebook"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="@dimen/_50pxh"
+            android:paddingHorizontal="@dimen/_11pxh"
+            android:paddingVertical="@dimen/_11pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_facebook" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnuiuxdesigner"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_22pxv"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_weight="0.6" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUIUXDesigner"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listfacebookRowModel.txtUIUXDesigner}"
+                style="@style/txtPoppinssemibold16" tools:text="@string/lbl_ui_ux_designer"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFullTime"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listfacebookRowModel.txtFullTime}"
+                style="@style/txtPoppinsregular12" tools:text="@string/lbl_full_time"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtPriceTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_33pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_weight="0.22" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{listfacebookRowModel.txtPriceTwo}"
+            style="@style/txtPoppinsmedium12" tools:text="@string/lbl_4500_m"/>
+    </LinearLayout>
+</layout>

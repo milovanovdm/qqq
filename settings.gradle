@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "egoistenok_s_application1"

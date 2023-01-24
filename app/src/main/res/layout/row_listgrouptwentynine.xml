@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listgrouptwentynineRowModel" type="com.egoistenoksapplication.app.modules.massage.data.model.ListgrouptwentynineRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowgrouptwentynine"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroupTwentyNine"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_15pxh"
+            android:paddingStart="@dimen/_15pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@{listgrouptwentynineRowModel.txtGroupTwentyNine}"
+            style="@style/txtSolidRounded_4" tools:text="@string/lbl_n"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnrozannebarrienSeven"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_weight="0.88" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRozanneBarrienSeven"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listgrouptwentynineRowModel.txtRozanneBarrienSeven}"
+                style="@style/txtPoppinsmedium16_6" tools:text="@string/lbl_natasha"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtThenewLeanstSix"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listgrouptwentynineRowModel.txtThenewLeanstSix}"
+                style="@style/txtPoppinsregular14_1" tools:text="@string/msg_i_am_going_to_d"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

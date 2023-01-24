@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="massagePersonRowModel" type="com.egoistenoksapplication.app.modules.massageperson.data.model.MassagePersonRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackrectanglecopy"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylecornerRadius_2">
+        <ImageView android:id="@+id/imageRectangleCopy"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_55pxh"
+            android:layout_width="@dimen/_110pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectanglecopy"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectanglecopy"/>
+        <LinearLayout android:id="@+id/linearColumnhello"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtHello"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{massagePersonRowModel.txtHello}"
+                style="@style/txtPoppinsmedium14_1" tools:text="@string/lbl39"/>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{massagePersonRowModel.txtTime}"
+                style="@style/txtPoppinsregular12_3" tools:text="@string/lbl_4_34_pm"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

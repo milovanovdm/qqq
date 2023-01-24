@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.egoistenoksapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.egoistenoksapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.search.ui.SearchActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.menu.ui.MenuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.login.ui.LogInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.massage.ui.MassageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.massageperson.ui.MassagePersonActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.profile.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.apply.ui.ApplyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.form.ui.FormActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.egoistenoksapplication.app.modules.splash.ui.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.egoistenoksapplication.app.modules.applications.ui.ApplicationsActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
