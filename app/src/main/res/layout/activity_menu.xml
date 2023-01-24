@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="menuVM" type="com.egoistenoksapplication.app.modules.menu.data.viewmodel.MenuVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearMenu"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageRectangle382"
+            android:layout_height="@dimen/_80pxh"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_100pxv"
+            android:layout_width="@dimen/_80pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_rectangle382}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle382"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtAdomShafi"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{menuVM.menuModel.txtAdomShafi}"
+            style="@style/txtPoppinsmedium30" tools:text="@string/lbl_adom_shafi"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtEmail"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{menuVM.menuModel.txtEmail}"
+            style="@style/txtPoppinsregular14_1" tools:text="@string/msg_hellobesnik_gma"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearEdit"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_44pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageVolume"
+                android:layout_height="@dimen/_36pxh"
+                android:layout_width="@dimen/_36pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_volume_36x36"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_volume_36x36"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEditProfile"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_weight="0.81" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{menuVM.menuModel.txtEditProfile}"
+                style="@style/txtPoppinsregular16_3" tools:text="@string/msg19"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearTransaction"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_red_a100_radius_18"
+                android:id="@+id/btnShape"
+                android:layout_height="@dimen/_36pxh"
+                android:layout_width="@dimen/_36pxh"
+                android:paddingHorizontal="@dimen/_9pxh"
+                android:paddingVertical="@dimen/_9pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_shape" tools:ignore="ContentDescription"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTransactionHis"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_weight="0.73" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{menuVM.menuModel.txtTransactionHis}"
+                style="@style/txtSFProDisplaymedium16" tools:text="@string/lbl_82"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearLogOut"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_100pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_274pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_red_a200_radius_18"
+                android:id="@+id/btnReply"
+                android:layout_height="@dimen/_36pxh"
+                android:layout_width="@dimen/_36pxh"
+                android:paddingHorizontal="@dimen/_9pxh"
+                android:paddingVertical="@dimen/_9pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_reply" tools:ignore="ContentDescription"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLogout"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_weight="0.59" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{menuVM.menuModel.txtLogout}"
+                style="@style/txtPoppinsregular16_3" tools:text="@string/lbl31"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
